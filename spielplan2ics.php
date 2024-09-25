@@ -108,8 +108,8 @@ for ($i=0; $i<count($expo); $i++) {  //-1 entfernt
   //$spiel_tmp = str_replace('    -    ', ' - ', trim(substr($expo[$i], 24, (strpos($expo[$i], "_   :   _")) - 24) ) );
   //$spiel = str_replace("BC Erlbach 1919", "BCE", trim(substr($expo[$i], 24, (strpos($expo[$i], "_   :   _")) - 24) ) );
   
-  $suchen = Array("    -    ", "BC Erlbach 1919");
-  $durchdasersetzen = Array(" - ", "BCE");
+  $suchen = array("    -    ", "BC Erlbach 1919");
+  $durchdasersetzen = array(" - ", "BCE");
   
   $spiel = str_replace($suchen, $durchdasersetzen, trim(substr($expo[$i], 24, (strpos($expo[$i], "_   :   _")) - 24) ));  
 
